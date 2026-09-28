@@ -23,7 +23,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="home" className="relative min-h-[85vh] flex items-center justify-center overflow-hidden px-6 py-40 text-center">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 py-40 text-center">
       {/* Background slides */}
       {slides.map((slide, i) => (
         <div
