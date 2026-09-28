@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-// Site header with logo and name. Nav links added later.
+// Site header with logo and name.
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-purple-dark border-b border-gold">
