@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function About() {
   return (
     <section id="about" className="bg-purple-light px-6 py-24">
-      <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-[60px] items-end">
+      <div className="max-w-275 mx-auto grid grid-cols-1 md:grid-cols-2 gap-15 items-end">
         <div>
           <span className="inline-block text-[11px] font-bold tracking-[0.12em] uppercase text-gold border border-gold px-3 py-1 rounded-full mb-4">
             About
@@ -12,7 +12,7 @@ export default function About() {
           <h2 className="font-display text-gold text-[clamp(26px,3.5vw,40px)] font-bold mb-4">
             Our Philosophy
           </h2>
-          <div className="max-w-[780px] flex flex-col gap-[18px]">
+          <div className="max-w-195 flex flex-col gap-4.5">
             <p className="text-[17px] leading-[1.8] text-cream">
               We believe the best way to experience a city is through the eyes of someone who truly loves it.
             </p>
