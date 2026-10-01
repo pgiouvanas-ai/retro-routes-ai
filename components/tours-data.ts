@@ -13,6 +13,7 @@ export type Tour = {
   whatToBring: string[];
   freeCancellation: string;
   images: TourImage[];
+  mapUrl: string;
 };
 
 export const tours: Tour[] = [
@@ -36,6 +37,7 @@ export const tours: Tour[] = [
     meetingPoint: "Meet us beneath the iconic clock at Independent House, once the heartbeat of Irish news, now the perfect spot to start our Retro Routes Experience.",
     whatToBring: ["Comfortable shoes", "Camera", "Water"],
     freeCancellation: "Free cancellation up to 24 hours in advance for a full refund.",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.9876543210987!2d-6.2603!3d53.3488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9a7e9b0001%3A0x1234567890abcdef!2sIndependent%20House%2C%20Middle%20Abbey%20St%2C%20Dublin!5e0!3m2!1sen!2sie!4v1234567890",
     images: [
       { src: "/images/vintage.jpg", alt: "Dublin vintage clothing rails and retro finds" },
       { src: "/images/stories1.jpg", alt: "Inside a moody Dublin vintage boutique" },
@@ -61,6 +63,7 @@ export const tours: Tour[] = [
     meetingPoint: "Meet us beneath the iconic clock at Independent House, once the heartbeat of Irish news, now the perfect spot to start our Retro Routes Experience.",
     whatToBring: ["Comfortable shoes", "Camera", "Water"],
     freeCancellation: "Free cancellation up to 24 hours in advance for a full refund.",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.9876543210987!2d-6.2603!3d53.3488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9a7e9b0001%3A0x1234567890abcdef!2sIndependent%20House%2C%20Middle%20Abbey%20St%2C%20Dublin!5e0!3m2!1sen!2sie!4v1234567890",
     images: [
       { src: "/images/halloween1.jpg", alt: "An Irish Halloween tour in Dublin" },
       { src: "/images/halloween2.jpg", alt: "Dublin haunted streets at night" },
@@ -85,6 +88,7 @@ export const tours: Tour[] = [
     meetingPoint: "Meet us at the Spire of Dublin on O'Connell Street, Ireland's most iconic landmark and the perfect starting point for our festive winter walk.",
     whatToBring: ["Comfortable shoes", "Camera", "Water"],
     freeCancellation: "Free cancellation up to 24 hours in advance for a full refund.",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.632851088981!2d-6.262830623546943!3d53.34982817446334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e843ebdec4d%3A0x7f2ea0ee1d1b678a!2sThe%20Spire!5e0!3m2!1sen!2sie!4v1786570048396!5m2!1sen!2sie",
     images: [
       { src: "/images/christmas1.jpg", alt: "Dublin Christmas lights and festive streets" },
       { src: "/images/christmas2.jpg", alt: "Dublin Winter Walks festive experience" },
