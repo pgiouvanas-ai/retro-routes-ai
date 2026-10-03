@@ -14,6 +14,9 @@ export default function PrivateHire() {
   return (
     <section id="private-hire" className="bg-purple-light px-6 py-24">
       <div className="max-w-275 mx-auto">
+        <span className="inline-block text-[11px] font-bold tracking-[0.12em] uppercase text-gold border border-gold px-3 py-1 rounded-full mb-4">
+            Private Hire
+          </span>
         <h2 className="font-display text-gold text-3xl mb-4">Your Dublin, your way</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start mt-8">
