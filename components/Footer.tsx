@@ -17,7 +17,7 @@ export default function Footer() {
             className="object-contain"
           />
           <div>
-            <h3 className="font-display italic text-[22px] text-cream mb-2">The Retro Routes Experience</h3>
+            <h3 className="font-display italic text-[22px] text-cream mb-2">Retro Routes Dublin</h3>
             <p className="text-[13px] text-gold tracking-widest uppercase">Ireland · Est. 2025</p>
           </div>
         </div>
@@ -55,7 +55,7 @@ export default function Footer() {
       </div>
 
       <hr className="border-t border-gold w-4/5 mx-auto my-8" />
-      <p className="text-[13px] text-cream text-center">© 2026 The Retro Routes Experience. All rights reserved.</p>
+      <p className="text-[13px] text-cream text-center">© 2026 Retro Routes Dublin. All rights reserved.</p>
     </footer>
   );
 }
