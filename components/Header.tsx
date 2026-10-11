@@ -29,7 +29,7 @@ export default function Header() {
             priority
           />
           <span className="font-display italic font-bold text-cream text-[clamp(16px,2vw,22px)] tracking-wide">
-            The Retro Routes Experience
+            Retro Routes Dublin
           </span>
         </div>
 
