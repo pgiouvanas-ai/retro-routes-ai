@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import ReviewModal from "@/components/ReviewModal";
+import ReviewModal from "@/components/ReviewsModal";
 
 const reviews = [
   {
@@ -39,12 +39,12 @@ export default function Reviews() {
 
   return (
     <section id="reviews" className="bg-purple-dark px-6 py-24">
-      <div className="max-w-[1100px] mx-auto">
+      <div className="max-w-275 mx-auto">
         <span className="inline-block text-[11px] font-bold tracking-[0.12em] uppercase text-gold border border-gold px-3 py-1 rounded-full mb-4">
           Reviews
         </span>
         <h2 className="font-display text-gold text-[clamp(26px,3.5vw,40px)] font-bold mb-4">What our guests say</h2>
-        <p className="text-cream text-[17px] max-w-[560px] mb-12">Rated 5.0 by every guest who has walked with us.</p>
+        <p className="text-cream text-[17px] max-w-140 mb-12">Rated 5.0 by every guest who has walked with us.</p>
 
         <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-6">
           {reviews.map((review) => (
