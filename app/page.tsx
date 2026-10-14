@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import PrivateHire from "@/components/PrivateHire";
 import Tours from "@/components/Tours";
 import BookingBar from "@/components/BookingBar";
+import Reviews from "@/components/Reviews";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <About />
       <Tours />
       <PrivateHire />
+      <Reviews />
     </main>
     <Footer />
     </>
