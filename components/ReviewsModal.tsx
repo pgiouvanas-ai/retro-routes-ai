@@ -27,8 +27,8 @@ export default function ReviewModal({ onClose }: { onClose: () => void }) {
   }
 
   return (
-    <div className="fixed inset-0 bg-black/85 z-[1000] flex items-center justify-center p-6" onClick={onClose}>
-      <div className="bg-purple-dark border border-gold rounded-2xl p-10 max-w-[500px] w-full relative" onClick={(e) => e.stopPropagation()}>
+    <div className="fixed inset-0 bg-black/85 z-1000 flex items-center justify-center p-6" onClick={onClose}>
+      <div className="bg-purple-dark border border-gold rounded-2xl p-10 max-w-140 w-full relative" onClick={(e) => e.stopPropagation()}>
         <button type="button" onClick={onClose} aria-label="Close" className="absolute top-5 right-6 text-gold text-[28px] leading-none">×</button>
 
         {sent ? (
