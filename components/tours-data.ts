@@ -95,4 +95,21 @@ export const tours: Tour[] = [
       { src: "/images/christmas3.jpg", alt: "Irish Christmas traditions in Dublin" },
     ],
   },
+    {
+    key: "tour4",
+    tag: "Walking Tour",
+    title: "Retro Royal Tour",
+    shortDescription: "Coming soon.",
+    description: "Details coming soon.",
+    duration: "TBC",
+    price: "TBC",
+    includes: [],
+    meetingPoint: "TBC",
+    whatToBring: [],
+    freeCancellation: "",
+    mapUrl: "",
+    images: [
+      { src: "/images/vintage.jpg", alt: "Retro Royal Tour" },
+    ],
+  },
 ];
