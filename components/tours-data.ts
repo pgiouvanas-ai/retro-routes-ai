@@ -106,7 +106,7 @@ export const tours: Tour[] = [
     includes: [],
     meetingPoint: "TBC",
     whatToBring: [],
-    freeCancellation: "",
+    freeCancellation: "Free cancellation up to 24 hours in advance for a full refund.",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.9876543210987!2d-6.2603!3d53.3488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9a7e9b0001%3A0x1234567890abcdef!2sIndependent%20House%2C%20Middle%20Abbey%20St%2C%20Dublin!5e0!3m2!1sen!2sie!4v1234567890",
     images: [
       { src: "/images/vintage.jpg", alt: "Retro Royal Tour" },
