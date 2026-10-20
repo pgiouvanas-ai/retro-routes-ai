@@ -101,7 +101,7 @@ export const tours: Tour[] = [
     title: "Retro Royal Tour",
     shortDescription: "Coming soon.",
     description: "Details coming soon.",
-    duration: "TBC",
+    duration: "3-4 hours",
     price: "TBC",
     includes: [],
     meetingPoint: "Meet us beneath the iconic clock at Independent House, once the heartbeat of Irish news, now the perfect spot to start our Retro Routes Experience.",
