@@ -118,7 +118,7 @@ export const tours: Tour[] = [
     title: "Antique Tour",
     shortDescription: "Coming soon.",
     description: "Details coming soon.",
-    duration: "TBC",
+    duration: "3-4 hours",
     price: "TBC",
     includes: [],
     meetingPoint: "TBC",
