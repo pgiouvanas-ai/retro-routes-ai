@@ -122,7 +122,7 @@ export const tours: Tour[] = [
     price: "TBC",
     includes: [],
     meetingPoint: "TBC",
-    whatToBring: [],
+    whatToBring: ["Comfortable shoes", "Camera", "Water"],
     freeCancellation: "",
     mapUrl: "",
     images: [
