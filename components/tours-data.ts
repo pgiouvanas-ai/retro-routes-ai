@@ -119,7 +119,7 @@ export const tours: Tour[] = [
     shortDescription: "Coming soon.",
     description: "Details coming soon.",
     duration: "3-4 hours",
-    price: "TBC",
+    price: "From €100 per adult",
     includes: [],
     meetingPoint: "TBC",
     whatToBring: ["Comfortable shoes", "Camera", "Water"],
