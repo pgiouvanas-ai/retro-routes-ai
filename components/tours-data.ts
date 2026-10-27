@@ -121,7 +121,7 @@ export const tours: Tour[] = [
     duration: "3-4 hours",
     price: "From €100 per adult",
     includes: [],
-    meetingPoint: "TBC",
+    meetingPoint: "Meet us beneath the iconic clock at Independent House, once the heartbeat of Irish news, now the perfect spot to start our Retro Routes Experience.",
     whatToBring: ["Comfortable shoes", "Camera", "Water"],
     freeCancellation: "",
     mapUrl: "",
