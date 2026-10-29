@@ -123,7 +123,7 @@ export const tours: Tour[] = [
     includes: [],
     meetingPoint: "Meet us beneath the iconic clock at Independent House, once the heartbeat of Irish news, now the perfect spot to start our Retro Routes Experience.",
     whatToBring: ["Comfortable shoes", "Camera", "Water"],
-    freeCancellation: "",
+    freeCancellation: "Free cancellation up to 24 hours in advance for a full refund.",
     mapUrl: "",
     images: [
       { src: "/images/vintage.jpg", alt: "Antique Tour" },
