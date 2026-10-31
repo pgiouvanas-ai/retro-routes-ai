@@ -114,7 +114,7 @@ export const tours: Tour[] = [
   },
     {
     key: "tour5",
-    tag: "Walking Tour",
+    tag: "Walking Tour · Daytime",
     title: "Antique Tour",
     shortDescription: "Coming soon.",
     description: "Details coming soon.",
