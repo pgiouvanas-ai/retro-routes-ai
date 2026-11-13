@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 import CookieConsent from "@/components/CookieConsent";
+import AiChat from "@/components/AiChat";
 
 // two fonts
 const playfair = Playfair_Display({
@@ -30,7 +31,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${playfair.variable} ${inter.variable} antialiased`}
     >
-      <body className="bg-purple-dark text-cream">{children}<CookieConsent /></body>
+      <body className="bg-purple-dark text-cream">
+        {children}
+        <CookieConsent />
+        <AiChat />
+        </body>
     </html>
   );
 }
