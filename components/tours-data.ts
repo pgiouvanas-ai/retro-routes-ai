@@ -129,4 +129,21 @@ export const tours: Tour[] = [
       { src: "/images/vintage.jpg", alt: "Antique Tour" },
     ],
   },
+  {
+    key: "tour6 · Daytime",
+    tag: "Walking Tour",
+    title: "Birthday Tour",
+    shortDescription: "Coming soon.",
+    description: "Details coming soon.",
+    duration: "TBC",
+    price: "TBC",
+    includes: [],
+    meetingPoint: "TBC",
+    whatToBring: [],
+    freeCancellation: "",
+    mapUrl: "",
+    images: [
+      { src: "/images/vintage.jpg", alt: "Tour Name" },
+    ],
+  },
 ];
