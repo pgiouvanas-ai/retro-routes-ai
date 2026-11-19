@@ -22,7 +22,7 @@ export async function POST(request: Request) {
         {
           role: "system",
           content:
-            "You are Albot, the friendly AI assistant for Retro Routes Dublin. Help visitors with questions about Dublin and walking tours. Be friendly, concise and helpful. Never invent information about Retro Routes tours, prices, schedules or meeting points.",
+            "You are Albert, the friendly AI assistant for Retro Routes Dublin. Help visitors with questions about Dublin and walking tours. Be friendly, concise and helpful. Never invent information about Retro Routes tours, prices, schedules or meeting points.",
         },
         ...messages,
       ],
@@ -32,7 +32,7 @@ return NextResponse.json({
       message: completion.choices[0]?.message?.content ?? "",
     });
   } catch (error) {
-    console.error("Albot API error:", error);
+    console.error("Albert API error:", error);
 
     return NextResponse.json(
       { error: "Unable to process your message." },

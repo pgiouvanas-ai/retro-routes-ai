@@ -45,7 +45,7 @@ export default function AiChat() {
       { role: "assistant", content: data.message },
     ]);
   } catch (error) {
-    console.error("Albot error:", error);
+    console.error("Albert error:", error);
   } finally {
     setLoading(false);
   }
@@ -57,11 +57,11 @@ export default function AiChat() {
       {open && (
         <div className="fixed bottom-24 right-6 z-300 w-[90%] max-w-95 h-125 bg-purple-dark border border-gold rounded-2xl flex flex-col overflow-hidden">
           <div className="flex items-center justify-between px-5 py-4 border-b border-gold">
-            <span className="font-display text-gold text-lg">Ask Albot</span>
+            <span className="font-display text-gold text-lg">Ask Albert</span>
             <button type="button" onClick={() => setOpen(false)} aria-label="Close chat" className="text-gold text-2xl leading-none">×</button>
           </div>
           <div className="flex-1 p-5 text-cream text-sm overflow-y-auto space-y-4">
-  <p>Hi, I&apos;m Albot. Ask me anything about our tours, meeting points, or Dublin.</p>
+  <p>Hi, I&apos;m Albert. Ask me anything about our tours, meeting points, or Dublin.</p>
 
   {messages.map((message, index) => (
     <div
@@ -74,7 +74,7 @@ export default function AiChat() {
     </div>
   ))}
 
-  {loading && <p className="text-gold">Albot is thinking...</p>}
+  {loading && <p className="text-gold">Albert is thinking...</p>}
 </div>
           <div className="p-4 border-t border-gold flex gap-2">
   <input
@@ -105,7 +105,7 @@ export default function AiChat() {
       <button
         type="button"
         onClick={() => setOpen(!open)}
-        aria-label="Open Albot assistant"
+        aria-label="Open Albert assistant"
         className="fixed bottom-6 right-6 z-300 bg-gold text-purple-dark w-14 h-14 rounded-full shadow-lg flex items-center justify-center hover:opacity-90 transition-opacity"
       >
         <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
