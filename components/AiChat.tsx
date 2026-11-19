@@ -5,6 +5,51 @@ import { useState } from "react";
 // Floating AI assistant button and chat panel.
 export default function AiChat() {
   const [open, setOpen] = useState(false);
+  const [messages, setMessages] = useState<
+  { role: "user" | "assistant"; content: string }[]
+   >([]);
+
+  const [input, setInput] = useState("");
+  const [loading, setLoading] = useState(false);
+  async function sendMessage() {
+  if (!input.trim() || loading) return;
+
+  const userMessage = {
+    role: "user" as const,
+    content: input.trim(),
+  };
+
+  const updatedMessages = [...messages, userMessage];
+
+  setMessages(updatedMessages);
+  setInput("");
+  setLoading(true);
+
+  try {
+    const response = await fetch("/api/chat", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ messages: updatedMessages }),
+    });
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(data.error || "Something went wrong");
+    }
+
+    setMessages([
+      ...updatedMessages,
+      { role: "assistant", content: data.message },
+    ]);
+  } catch (error) {
+    console.error("Albot error:", error);
+  } finally {
+    setLoading(false);
+  }
+}
 
   return (
     <>
@@ -15,16 +60,44 @@ export default function AiChat() {
             <span className="font-display text-gold text-lg">Ask Albot</span>
             <button type="button" onClick={() => setOpen(false)} aria-label="Close chat" className="text-gold text-2xl leading-none">×</button>
           </div>
-          <div className="flex-1 p-5 text-cream text-sm overflow-y-auto">
-            Hi, I&apos;m Albot. Ask me anything about our tours, meeting points, or Dublin.
-          </div>
-          <div className="p-4 border-t border-gold">
-            <input
-              type="text"
-              placeholder="Type your question..."
-              className="w-full bg-purple-light text-cream border border-gold rounded px-3 py-2"
-            />
-          </div>
+          <div className="flex-1 p-5 text-cream text-sm overflow-y-auto space-y-4">
+  <p>Hi, I&apos;m Albot. Ask me anything about our tours, meeting points, or Dublin.</p>
+
+  {messages.map((message, index) => (
+    <div
+      key={index}
+      className={message.role === "user" ? "text-right" : "text-left"}
+    >
+      <span className="inline-block bg-purple-light rounded-lg px-3 py-2">
+        {message.content}
+      </span>
+    </div>
+  ))}
+
+  {loading && <p className="text-gold">Albot is thinking...</p>}
+</div>
+          <div className="p-4 border-t border-gold flex gap-2">
+  <input
+    type="text"
+    value={input}
+    onChange={(e) => setInput(e.target.value)}
+    onKeyDown={(e) => {
+      if (e.key === "Enter") sendMessage();
+    }}
+    placeholder="Type your question..."
+    disabled={loading}
+    className="flex-1 min-w-0 bg-purple-light text-cream border border-gold rounded px-3 py-2"
+  />
+
+  <button
+    type="button"
+    onClick={sendMessage}
+    disabled={loading || !input.trim()}
+    className="bg-gold text-purple-dark font-bold px-4 py-2 rounded disabled:opacity-50"
+  >
+    Send
+  </button>
+</div>
         </div>
       )}
 
