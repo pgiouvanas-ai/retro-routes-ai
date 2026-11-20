@@ -1,7 +1,7 @@
 export default function BookingBar() {
   return (
     <section className="bg-purple-dark py-5 px-6">
-      <div className="max-w-[1100px] mx-auto flex items-center justify-center gap-8 flex-wrap">
+      <div className="max-w-275 mx-auto flex items-center justify-center gap-8 flex-wrap">
         <span className="text-cream text-[13px] font-semibold tracking-[0.08em] uppercase">
           Book with us on
         </span>

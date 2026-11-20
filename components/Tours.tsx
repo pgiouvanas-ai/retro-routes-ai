@@ -11,12 +11,12 @@ export default function Tours() {
 
   return (
     <section id="tours" className="bg-purple-dark px-6 py-24">
-      <div className="max-w-[1100px] mx-auto">
+      <div className="max-w-275 mx-auto">
         <span className="inline-block text-[11px] font-bold tracking-[0.12em] uppercase text-gold border border-gold px-3 py-1 rounded-full mb-4">
           Tours
         </span>
         <h2 className="font-display text-gold text-[clamp(26px,3.5vw,40px)] font-bold mb-4">Walk the real Dublin</h2>
-        <p className="text-cream text-[17px] max-w-[560px] mb-14">
+        <p className="text-cream text-[17px] max-w-140 mb-14">
           Every tour is small-group, guide-led, and built around the parts of Dublin that don&apos;t make it onto the tourist maps.
         </p>
 

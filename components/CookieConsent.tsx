@@ -48,8 +48,8 @@ export default function CookieConsent() {
   if (!visible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-[200] bg-purple-dark border-t border-gold px-6 py-5">
-      <div className="max-w-[1000px] mx-auto flex flex-col sm:flex-row items-center gap-4">
+    <div className="fixed bottom-0 left-0 right-0 z-200 bg-purple-dark border-t border-gold px-6 py-5">
+      <div className="max-w-250 mx-auto flex flex-col sm:flex-row items-center gap-4">
         <p className="text-cream text-[14px] leading-[1.6] flex-1">
           We use essential cookies to run this site and, with your consent, analytics cookies to understand how visitors use it. See our{" "}
           <Link href="/cookies" className="text-gold underline">Cookie Policy</Link>.

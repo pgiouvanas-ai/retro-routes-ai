@@ -38,7 +38,7 @@ export default function Hero() {
             priority={i === 0}
             className="object-cover object-[center_30%]"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/70 to-black/90" />
+          <div className="absolute inset-0 bg-linear-to-b from-black/55 via-black/70 to-black/90" />
         </div>
       ))}
 
@@ -57,13 +57,13 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-[860px]">
+      <div className="relative z-10 max-w-215">
         <h1 className="font-display text-cream text-[clamp(36px,5vw,64px)] font-extrabold leading-tight mb-7">
           Dublin through
           <br />
           <em className="italic text-gold">different eyes</em>
         </h1>
-        <p className="text-cream text-xl leading-relaxed max-w-[600px] mx-auto mb-13">
+        <p className="text-cream text-xl leading-relaxed max-w-150 mx-auto mb-13">
           Dublin isn&apos;t just the big sights. It&apos;s the vintage shops, Irish independent businesses, hidden corners and unexpected stories that make the city what it is. Shop local. Drink local. Experience Dublin like a local. Welcome to Retro Routes.
         </p>
         <div className="flex gap-5 justify-center flex-wrap">

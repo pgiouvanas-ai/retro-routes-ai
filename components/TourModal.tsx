@@ -9,8 +9,8 @@ function ModalCarousel({ images }: { images: Tour["images"] }) {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="relative w-full h-[280px] rounded-xl overflow-hidden mb-6">
-      <div className="flex h-full transition-transform duration-[400ms] ease-in-out" style={{ transform: `translateX(-${index * 100}%)` }}>
+    <div className="relative w-full h-70 rounded-xl overflow-hidden mb-6">
+      <div className="flex h-full transition-transform duration-400 ease-in-out" style={{ transform: `translateX(-${index * 100}%)` }}>
         {images.map((img) => (
           <div key={img.src} className="relative min-w-full h-full">
             <Image src={img.src} alt={img.alt} fill sizes="(max-width: 768px) 90vw, 700px" className="object-cover" />
@@ -18,7 +18,7 @@ function ModalCarousel({ images }: { images: Tour["images"] }) {
         ))}
       </div>
       {images.length > 1 && (
-        <div className="absolute bottom-[10px] left-1/2 -translate-x-1/2 flex gap-[6px]">
+        <div className="absolute bottom-2.5 left-1/2 -translate-x-1/2 flex gap-1.5">
           {images.map((img, i) => (
             <button
               type="button"
